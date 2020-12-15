@@ -1,0 +1,15 @@
+<html lang="es" xml:lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Datos Formulario</title>
+</head>
+<body>
+	<p th:text=${edad_form}></p>
+	<p th:text=${estatura_form}></p>
+	<p th:text=${peso_form}></p>
+	
+	<p th:if="${sexo_form == '1'}" th:text="Hombre"></p>
+	<p th:if="${sexo_form == '0'}" th:text="Mujer"></p>	
+	
+	<p th:text=${porcentaje_form}></p>
+</body>
+</html>
